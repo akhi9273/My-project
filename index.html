@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Lite - Dummy App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Flipkart</h1>
+                <span>Explore <span style="color: #ffe500;">Plus</span></span>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+                <button id="searchBtn">Search</button>
+            </div>
+            <div class="nav-actions">
+                <button class="login-btn">Login</button>
+                <div class="cart-btn" id="cartBtn">
+                    🛒 Cart (<span id="cart-count">0</span>)
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-grid" id="productGrid">
+            </section>
+    </main>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>My Cart</h3>
+            <button class="close-cart" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            </div>
+        <div class="cart-total">
+            <span>Total Amount:</span>
+            <span>₹<span id="cartTotalAmount">0</span></span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">PLACE ORDER</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
